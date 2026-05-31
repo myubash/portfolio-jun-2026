@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Work from './components/Work'
@@ -10,6 +11,7 @@ import Background from './components/Background'
 export default function App() {
   return (
     <div className="relative min-h-screen bg-[#0B1120] text-[#F8FAFC] font-sans overflow-x-hidden">
+      <Analytics/>
       <Background />
       <Navbar />
       <main>
